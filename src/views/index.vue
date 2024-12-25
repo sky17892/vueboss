@@ -62,7 +62,7 @@
 					  비밀번호
 				  </div>
 				  <input type="password" name="login_pw" placeholder="패스워드" class="out_login_ip" tabindex="2">				
-				  <router-link to="/"><button class="pop_login_btn" tabindex="3"><i class="fas fa-sign-in-alt" aria-hidden="true"></i> 로그인</button></router-link>
+				  <router-link to="/indexsss"><button class="pop_login_btn" tabindex="3"><i class="fas fa-sign-in-alt" aria-hidden="true"></i> 로그인</button></router-link>
 				  <span class="btn_pop_join join_btn" @click="showJoin">회원가입</span>
 				  <span class="btn_pop_tel tel_btn"><i class="fas fa-brands fa-telegram" aria-hidden="true"></i> 텔레그램 문의</span>
 			  </form>
