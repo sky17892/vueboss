@@ -52,7 +52,7 @@
 				  <img src="https://boss-1177.com/static/img/logo.png" alt="">
 				  <span class="close_login_pop" @click="hideLogin"><i class="fas fa-times" aria-hidden="true"></i></span>
 			  </div>
-			  <form action="/indexsss" method="get">
+			  <form action="/game/login_check" method="post">
 				  <input type="hidden" name="page" value="/">
 				  <div class="pop_login_sub_ttl">
 					  아이디
@@ -62,7 +62,7 @@
 					  비밀번호
 				  </div>
 				  <input type="password" name="login_pw" placeholder="패스워드" class="out_login_ip" tabindex="2">				
-				  <a href="https://vueboss.vercel.app/indexsss"><button class="pop_login_btn" tabindex="3"><i class="fas fa-sign-in-alt" aria-hidden="true"></i> 로그인</button></a>
+				  <router-link to="/indexsss"><button class="pop_login_btn" tabindex="3"><i class="fas fa-sign-in-alt" aria-hidden="true"></i> 로그인</button></router-link>
 				  <span class="btn_pop_join join_btn" @click="showJoin">회원가입</span>
 				  <span class="btn_pop_tel tel_btn"><i class="fas fa-brands fa-telegram" aria-hidden="true"></i> 텔레그램 문의</span>
 			  </form>
@@ -916,7 +916,7 @@
 		  <div class="pop_join_info">
 			   정보입력
 		  </div>
-		  <form action="https://vueboss.vercel.app/customer/register_update" method="get" class="join_form">
+		  <form action="/customer/register_update" method="get" class="join_form">
 									  
 			  <div class="pop_join_sub_ttl">
 				  아이디
