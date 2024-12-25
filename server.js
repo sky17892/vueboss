@@ -21,28 +21,28 @@ db.connect(err => {
     console.log('MySQL Connected!');
 });
 
-app.get('/api/deposit', (req, res) => {
+app.get('https://vueboss.vercel.app/api/deposit', (req, res) => {
     db.query('SELECT * FROM deposit', (err, results) => {
         if (err) throw err;
         res.json(results);
     });
 });
 
-app.get('/api/withdrawal', (req, res) => {
+app.get('https://vueboss.vercel.app/api/withdrawal', (req, res) => {
     db.query('SELECT * FROM withdrawal', (err, results) => {
         if (err) throw err;
         res.json(results);
     });
 });
 
-app.get('/api/user', (req, res) => {
+app.get('https://vueboss.vercel.app/api/user', (req, res) => {
     db.query('SELECT * FROM buser', (err, results) => {
         if (err) throw err;
         res.json(results);
     });
 });
 
-app.get('/customer/register_update', (req, res) => {
+app.get('https://vueboss.vercel.app/customer/register_update', (req, res) => {
     const { user_id, user_nick, user_pw, user_pw_re, hp, mb_bank, bank_no, bank_account, rec} = req.query;
 
     // SQL 쿼리 작성
