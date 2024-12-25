@@ -442,7 +442,7 @@
 	<div class="top_inner">
 		<div class="top_info_box tr">
 			<div class="logo_gnb">
-				<router-link to="/indexsss"><a href="#" class="no_pop"><img src="https://boss-1177.com/static/img/logo.png" alt=""></a></router-link>
+				<router-link to="/"><a href="#" class="no_pop"><img src="https://boss-1177.com/static/img/logo.png" alt=""></a></router-link>
 			</div>
 			<div class="top_right_box">
 				<router-link to="/deposit"><a href="#" class="mg_link"><i class="fa fa-plus" aria-hidden="true"></i> 충전</a></router-link>
