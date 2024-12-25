@@ -42,7 +42,7 @@ app.get('/api/user', (req, res) => {
     });
 });
 
-app.get('/customer/register_update', (req, res) => {
+app.post('/customer/register_update', (req, res) => {
     const { user_id, user_nick, user_pw, user_pw_re, hp, mb_bank, bank_no, bank_account, rec} = req.query;
 
     // SQL 쿼리 작성
