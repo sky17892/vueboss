@@ -916,7 +916,7 @@
 		  <div class="pop_join_info">
 			   정보입력
 		  </div>
-		  <form action="http://localhost:3000/customer/register_update" method="post" class="join_form">
+		  <form action="/register_update" method="post" class="join_form">
 									  
 			  <div class="pop_join_sub_ttl">
 				  아이디
