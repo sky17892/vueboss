@@ -6,12 +6,12 @@ import errorPage from '../views/error.vue'
 let hasOpened = false;
 const routes = [
   {
-    path: '/indexsss',
+    path: '/',
     name: 'home',
     component: HomeView
   },
 {
-  path: '/',
+  path: '/indexsss',
   name: 'indexsss',
   component: HomeView2
 },
