@@ -30,7 +30,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/withdrawal.vue')
+    component: () => import('../views/withdrawal.vue')
   },
   {
     path: '/ichange',
@@ -38,7 +38,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/ichange.vue')
+    component: () => import('../views/ichange.vue')
   },
   {
     path: '/cs_center',
