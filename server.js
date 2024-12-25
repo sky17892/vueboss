@@ -9,9 +9,6 @@ app.use(cors());
 app.use(express.urlencoded({ extended: true}));
 app.use(express.json());
 
-
-const BASE_URL123 = 'https://vueboss.vercel.app';
-
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
@@ -24,28 +21,28 @@ db.connect(err => {
     console.log('MySQL Connected!');
 });
 
-app.get(`${BASE_URL123}/api/deposit`, (req, res) => {
+app.get('/api/deposit', (req, res) => {
     db.query('SELECT * FROM deposit', (err, results) => {
         if (err) throw err;
         res.json(results);
     });
 });
 
-app.get(`${BASE_URL123}/api/withdrawal`, (req, res) => {
+app.get('/api/withdrawal', (req, res) => {
     db.query('SELECT * FROM withdrawal', (err, results) => {
         if (err) throw err;
         res.json(results);
     });
 });
 
-app.get(`${BASE_URL123}/api/user`, (req, res) => {
+app.get('/api/user', (req, res) => {
     db.query('SELECT * FROM buser', (err, results) => {
         if (err) throw err;
         res.json(results);
     });
 });
 
-app.get(`${BASE_URL123}/customer/register_update`, (req, res) => {
+app.get('/customer/register_update', (req, res) => {
     const { user_id, user_nick, user_pw, user_pw_re, hp, mb_bank, bank_no, bank_account, rec} = req.query;
 
     // SQL 쿼리 작성
