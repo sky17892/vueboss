@@ -1,0 +1,220 @@
+    @keyframes pinAnimation {
+        0% {
+            transform: rotate(0deg);
+        }
+        10% {
+            transform: rotate(4deg);
+        }
+        20% {
+            transform: rotate(8deg);
+        }
+        30% {
+            transform: rotate(12deg);
+        }
+        40% {
+            transform: rotate(16deg);
+        }
+        50% {
+            transform: rotate(20deg);
+        }
+        60% {
+            transform: rotate(16deg);
+        }
+        70% {
+            transform: rotate(12deg);
+        }
+        80% {
+            transform: rotate(8deg);
+        }
+        90% {
+            transform: rotate(4deg);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes pinAnimation2 {
+        0% {
+            transform: rotate(0deg);
+        }
+        10% {
+            transform: rotate(3deg);
+        }
+        20% {
+            transform: rotate(6deg);
+        }
+        30% {
+            transform: rotate(9deg);
+        }
+        40% {
+            transform: rotate(12deg);
+        }
+        50% {
+            transform: rotate(15deg);
+        }
+        60% {
+            transform: rotate(12deg);
+        }
+        70% {
+            transform: rotate(9deg);
+        }
+        80% {
+            transform: rotate(6deg);
+        }
+        90% {
+            transform: rotate(3deg);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+    .roulette_pin.animate {
+        animation: pinAnimation 0.5s infinite;
+    }
+    .roulette_pin.animate2 {
+        animation: pinAnimation2 0.5s infinite;
+    }
+    .roulette_area2 {
+        position: relative;
+        background: url(https://boss-1177.com/static/img/roulette/rul_bg2.png) no-repeat top;
+        background-size: 100%;
+    }
+    .roulette {
+        position: relative;
+        text-align: center;
+        height: 1343px;
+    }
+    .roulette .roulette_circle {
+        position: relative;
+        z-index: 1;
+        margin-top: 100px;
+    }
+    .roulette .roulette_pin {
+        position: absolute;
+        z-index: 2;
+        top: 6%;
+        right: 577px;
+    }
+    .roulette .roulette_btn {
+        position: absolute;
+        z-index: 2;
+        top: 28.5%;
+        left: 554px;
+        width: 150px;
+        height: 150px;
+    }
+    .roulette .roulette_character {
+        position: absolute;
+        z-index: 2;
+        top: 40%;
+        left: 800px;
+    }
+    .roulette_canvas {
+        position: absolute;
+        z-index: 1;
+        top: 193px;
+        left: 363px;
+    }
+    .roulette_win_log {
+        position: absolute;
+        z-index: 2;
+        top: 66%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        height: 25%;
+        background-color: rgba(34, 34, 34, 0.9);
+        border-radius: 15px;
+        padding: 20px;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        overflow-y: auto;
+    }
+    .roulette_win_log table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0 5px;
+        text-align: center;
+    }
+    .roulette_win_log th, .roulette_win_log td {
+        padding: 15px;
+        font-size: 1.2em;
+        color: #fff;
+    }
+    .roulette_win_log th {
+        background-color: #c0392b;
+    }
+    .roulette_win_log thead tr {
+        border-radius: 10px;
+    }
+    .roulette_win_log tbody {
+        overflow-y: auto;
+    }
+    .roulette_win_log tr:first-child th:first-child {
+        border-top-left-radius: 10px;
+    }
+    .roulette_win_log tr:first-child th:last-child {
+        border-top-right-radius: 10px;
+    }
+    .roulette_win_log tr:last-child td:first-child {
+        border-bottom-left-radius: 10px;
+    }
+    .roulette_win_log tr:last-child td:last-child {
+        border-bottom-right-radius: 10px;
+    }
+    .roulette_win_log td {
+        background-color: rgba(44, 44, 44, 0.8);
+    }
+    .roulette_win_log caption {
+        caption-side: top;
+        font-size: 1.8em;
+        margin-bottom: 15px;
+        color: #fff;
+        font-weight: bold;
+    }
+    @media screen and (max-width: 1024px) {
+        .roulette {
+            height: auto;
+        }
+        .roulette .roulette_circle {
+            margin-top: 11%;
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+        }
+        .roulette_canvas {
+            width: 53.5%;
+            height: auto;
+            top: 22.8%;
+            left: 23.25%;
+        }
+        .roulette .roulette_pin {
+            top: 10%;
+            left: 50%;
+            width: 50px;
+            margin-left: -25px;
+        }
+        .roulette .roulette_btn {
+            top: 49%;
+            left: 45%;
+            width: 10%;
+            height: auto;
+        }
+        .roulette .roulette_character {
+            display: none;
+        }
+        .roulette_win_log {
+            width: 100%;
+            top: 95%;
+            height: 100%;
+            transform: translateX(-50%) scale(0.9);
+        }
+        .roulette_win_log th, .roulette_win_log td {
+            font-size: 0.8em;
+        }
+        .roulette_win_log caption {
+            font-size: 1.0em;
+            margin-bottom: 5px;
+        }
+    }
