@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/index.vue'
 import HomeView2 from '../views/indexsss.vue'
+import Deposit from '../views/deposit.vue'
 import errorPage from '../views/error.vue'
 
 let hasOpened = false;
@@ -21,7 +22,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/deposit.vue')
+    component: Deposit
   },
   {
     path: '/withdrawal',
