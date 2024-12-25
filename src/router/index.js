@@ -5,7 +5,7 @@ import errorPage from '../views/error.vue'
 let hasOpened = false;
 const routes = [
   {
-    path: '/',
+    path: 'https://vueboss.vercel.app/',
     name: 'home',
     component: HomeView
   },
