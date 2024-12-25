@@ -68,11 +68,12 @@ app.post('/customer/register_update', (req, res) => {
         }
 
         // 응답에 모든 쿼리 파라미터 포함
-        /*res.status(201).json({
+        res.status(201).json({
             message: '사용자 추가 성공',
-            userId: results.insertId           
-        });*/
-        res.redirect('/'); 
+            userId: results.insertId,
+            redirectUrl: '/'          
+        });
+        //res.redirect('/'); 
     });
 });
 
