@@ -48,7 +48,7 @@
 		  });
   
 		  // 성공 후 페이지 이동
-		  this.$router.push('/indexsss'); // 원하는 경로로 수정
+		  this.$router.push('/'); // 원하는 경로로 수정
 		} catch (error) {
 		  console.error(error);
 		  alert('등록 중 오류가 발생했습니다.');
