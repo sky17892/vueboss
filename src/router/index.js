@@ -3,6 +3,9 @@ import HomeView from '../views/index.vue'
 import errorPage from '../views/error.vue'
 
 let hasOpened = false;
+
+const BASE_URL = 'https://vueboss.vercel.app'
+
 const routes = [
   {
     path: '/',
@@ -18,7 +21,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/indexsss.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/indexsss';
+      window.location.href = `${BASE_URL}/indexsss`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -31,7 +34,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/deposit.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/deposit';
+      window.location.href = `${BASE_URL}/deposit`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -44,7 +47,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/withdrawal.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/withdrawal';
+      window.location.href = `${BASE_URL}/withdrawal`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -57,7 +60,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/ichange.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/ichange';
+      window.location.href = `${BASE_URL}/ichange`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -70,7 +73,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/cs_center.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/cs_center';
+      window.location.href = `${BASE_URL}/cs_center`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -83,7 +86,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/money_list.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/money_list';
+      window.location.href = `${BASE_URL}/money_list`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -96,7 +99,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/bet_list_spo.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/bet_list_spo';
+      window.location.href = `${BASE_URL}/bet_list_spo`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -109,7 +112,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/att.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/att';
+      window.location.href = `${BASE_URL}/att`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -122,7 +125,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/notice.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/notice';
+      window.location.href = `${BASE_URL}/notice`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -135,7 +138,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/event.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/event';
+      window.location.href = `${BASE_URL}/event`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -148,7 +151,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/event.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/event';
+      window.location.href = `${BASE_URL}/event`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -161,7 +164,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/nt_view15.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/nt_view15';
+      window.location.href = `${BASE_URL}/nt_view15`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -174,7 +177,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/nt_view16.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/nt_view16';
+      window.location.href = `${BASE_URL}/nt_view16`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -187,7 +190,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/nt_view17.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/nt_view17';
+      window.location.href = `${BASE_URL}/nt_view17`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -200,7 +203,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/nt_view18.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/nt_view18';
+      window.location.href = `${BASE_URL}/nt_view18`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -213,7 +216,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/nt_view19.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/nt_vuew19';
+      window.location.href = `${BASE_URL}/nt_view19`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -226,7 +229,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/nt_view20.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/nt_view20';
+      window.location.href = `${BASE_URL}/nt_view20`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -239,7 +242,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/nt_view23.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/nt_view23';
+      window.location.href = `${BASE_URL}/nt_view23`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -252,7 +255,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/nt_view21.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/nt_view21';
+      window.location.href = `${BASE_URL}/nt_view21`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -265,7 +268,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/nt_view22.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/nt_view22';
+      window.location.href = `${BASE_URL}/nt_view22`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -278,7 +281,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/nt_view24.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/nt_view24';
+      window.location.href = `${BASE_URL}/nt_view24`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -291,7 +294,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/nt_view25.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/nt_view25';
+      window.location.href = `${BASE_URL}/nt_view25`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -304,7 +307,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/et_view57.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/et_view57';
+      window.location.href = `${BASE_URL}/et_view57`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -317,7 +320,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/et_view55.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/et_view55';
+      window.location.href = `${BASE_URL}/et_view55`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -330,7 +333,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/et_view54.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/et_view54';
+      window.location.href = `${BASE_URL}/et_view54`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -343,7 +346,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/et_view52.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/et_view52';
+      window.location.href = `${BASE_URL}/et_view52`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -356,7 +359,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/et_view51.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/et_view51';
+      window.location.href = `${BASE_URL}/et_view51`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -369,7 +372,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/et_view40.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/et_view40';
+      window.location.href = `${BASE_URL}/et_view40`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -382,7 +385,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/et_view27.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/et_view27';
+      window.location.href = `${BASE_URL}/et_view27`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -395,7 +398,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/et_view37.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/et_view37';
+      window.location.href = `${BASE_URL}/et_view37`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -408,7 +411,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/et_view36.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/et_view36';
+      window.location.href = `${BASE_URL}/et_view36`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -421,7 +424,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/et_view25.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/et_view25';
+      window.location.href = `${BASE_URL}/et_view25`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -434,7 +437,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/et_view30.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/et_view30';
+      window.location.href = `${BASE_URL}/et_view30`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -447,7 +450,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/et_view31.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/et_view31';
+      window.location.href = `${BASE_URL}/et_view31`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -460,7 +463,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/et_view29.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/et_view29';
+      window.location.href = `${BASE_URL}/et_view29`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -473,7 +476,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/et_view22.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/et_view22';
+      window.location.href = `${BASE_URL}/et_view22`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -486,7 +489,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/et_view43.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/et_view43';
+      window.location.href = `${BASE_URL}/et_view43`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -499,7 +502,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/et_view21.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/et_view21';
+      window.location.href = `${BASE_URL}/et_view21`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -512,7 +515,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/et_view23.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/et_view23';
+      window.location.href = `${BASE_URL}/et_view23`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -525,7 +528,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/et_view24.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/et_view24';
+      window.location.href = `${BASE_URL}/et_view24`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -538,7 +541,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/et_view26.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/et_view26';
+      window.location.href = `${BASE_URL}/et_view26`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -551,7 +554,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/et_view28.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/et_view28';
+      window.location.href = `${BASE_URL}/et_view28`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -564,7 +567,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/et_view32.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/et_view32';
+      window.location.href = `${BASE_URL}/et_view32`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -577,7 +580,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/et_view34.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/et_view34';
+      window.location.href = `${BASE_URL}/et_view34`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -590,7 +593,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/et_view35.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/et_view35';
+      window.location.href = `${BASE_URL}/et_view35`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -603,7 +606,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/et_view39.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/et_view39';
+      window.location.href = `${BASE_URL}/et_view39`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -616,7 +619,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/memo.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/memo';
+      window.location.href = `${BASE_URL}/memo`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -629,7 +632,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/transfer.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/transfer';
+      window.location.href = `${BASE_URL}/transfer`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -642,7 +645,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/roulette.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/roulette';
+      window.location.href = `${BASE_URL}/roulette`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -655,7 +658,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/sports.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/sports';
+      window.location.href = `${BASE_URL}/sports`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -668,7 +671,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/korean2.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/korea2';
+      window.location.href = `${BASE_URL}/korean2`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -681,7 +684,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/inplay.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/inplay';
+      window.location.href = `${BASE_URL}/inplay`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -694,7 +697,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/special.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/special';
+      window.location.href = `${BASE_URL}/special`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -707,7 +710,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/es.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/es';
+      window.location.href = `${BASE_URL}/es`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -720,7 +723,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/vscall.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/vscall';
+      window.location.href = `${BASE_URL}/vscall`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -733,7 +736,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/gg_pwb1.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/gg_pwb1';
+      window.location.href = `${BASE_URL}/gg_pwb1`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -746,7 +749,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/hilo.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/hilp';
+      window.location.href = `${BASE_URL}/hilo`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -759,7 +762,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/connect.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/connect';
+      window.location.href = `${BASE_URL}/connect`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -772,7 +775,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/slot.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/slot';
+      window.location.href = `${BASE_URL}/slot`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -785,7 +788,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/pbg_pwb5.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/pbg_pwb5';
+      window.location.href = `${BASE_URL}/pbg_pwb5`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -798,7 +801,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/korean.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/korean';
+      window.location.href = `${BASE_URL}/korean`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -811,7 +814,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/withdrawal_list.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/widthdrawal_list';
+      window.location.href = `${BASE_URL}/withdrawal_list`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -824,7 +827,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/deposit_list.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/deposit_list';
+      window.location.href = `${BASE_URL}/deposit_list`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -837,7 +840,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/qna_deposit.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/qna_deposit';
+      window.location.href = `${BASE_URL}/qna_deposit`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -850,7 +853,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/et_view61.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/et_view61';
+      window.location.href = `${BASE_URL}/et_view61`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -863,7 +866,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/cs_write.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/cs_write';
+      window.location.href = `${BASE_URL}/cs_write`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   }, 
@@ -876,7 +879,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/vote.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/vote';
+      window.location.href = `${BASE_URL}/vote`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -889,7 +892,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/run_roulette.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/run_roulette';
+      window.location.href = `${BASE_URL}/run_roulette`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -902,7 +905,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/bet_list_inp.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/bet_list_inp';
+      window.location.href = `${BASE_URL}/bet_list_inp`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -915,7 +918,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/bet_list_mini.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/bet_list_mini';
+      window.location.href = `${BASE_URL}/bet_list_mini`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -928,7 +931,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/bet_list_casino.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/bet_list_casino';
+      window.location.href = `${BASE_URL}/bet_list_casino`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -941,7 +944,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/bet_list_es.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/bet_list_es';
+      window.location.href = `${BASE_URL}/bet_list_es`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -951,7 +954,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/admin/index.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/admin/index';
+      window.location.href = `${BASE_URL}/admin/index`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -964,7 +967,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/admin/dedb.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/admin/dedb';
+      window.location.href = `${BASE_URL}/admin/dedb`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -977,7 +980,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/admin/userdb.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/admin/userdb';
+      window.location.href = `${BASE_URL}/admin/userdb`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -990,7 +993,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/admin/widb.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/admin/widb';
+      window.location.href = `${BASE_URL}/admin/widb`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
@@ -1003,7 +1006,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/register_update.vue'),
     beforeEnter: (to, from, next) => {
       // 외부 URL로 리디렉션
-      window.location.href = 'https://vueboss.vercel.app/register_update';
+      window.location.href = `${BASE_URL}/register_update`;
       // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
     }
   },
