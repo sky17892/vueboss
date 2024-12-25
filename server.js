@@ -72,7 +72,7 @@ app.post('/customer/register_update', (req, res) => {
             message: '사용자 추가 성공',
             userId: results.insertId           
         });*/
-        res.redirect('https://vueboss.vercel.app/'); 
+        res.redirect('/'); 
     });
 });
 
