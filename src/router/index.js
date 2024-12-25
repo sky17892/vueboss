@@ -3,27 +3,19 @@ import HomeView from '../views/index.vue'
 import errorPage from '../views/error.vue'
 
 let hasOpened = false;
-
-const BASE_URL = 'https://vueboss.vercel.app'
-
 const routes = [
   {
-    path: '/',
+    path: '/indexsss',
     name: 'home',
-    component: HomeView    
+    component: HomeView
   },
   {
-    path: '/indexsss',
+    path: '/',
     name: 'indexsss',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/indexsss.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/indexsss`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/indexsss.vue')
   },
   {
     path: '/deposit',
@@ -31,12 +23,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/deposit.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/deposit`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/deposit.vue')
   },
   {
     path: '/withdrawal',
@@ -44,12 +31,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/withdrawal.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/withdrawal`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/withdrawal.vue')
   },
   {
     path: '/ichange',
@@ -57,12 +39,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/ichange.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/ichange`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/ichange.vue')
   },
   {
     path: '/cs_center',
@@ -70,12 +47,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/cs_center.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/cs_center`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/cs_center.vue')
   },
   {
     path: '/money_list',
@@ -83,12 +55,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/money_list.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/money_list`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/money_list.vue')
   },
   {
     path: '/bet_list_spo',
@@ -96,12 +63,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/bet_list_spo.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/bet_list_spo`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/bet_list_spo.vue')
   },
   {
     path: '/att',
@@ -109,12 +71,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/att.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/att`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/att.vue')
   },
   {
     path: '/notice',
@@ -122,12 +79,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/notice.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/notice`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/notice.vue')
   },
   {
     path: '/event',
@@ -135,12 +87,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/event.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/event`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/event.vue')
   },
   {
     path: '/event',
@@ -148,12 +95,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/event.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/event`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/event.vue')
   },
   {
     path: '/nt_view15',
@@ -161,12 +103,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/nt_view15.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/nt_view15`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/nt_view15.vue')
   },
   {
     path: '/nt_view16',
@@ -174,12 +111,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/nt_view16.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/nt_view16`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/nt_view16.vue')
   },
   {
     path: '/nt_view17',
@@ -187,12 +119,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/nt_view17.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/nt_view17`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/nt_view17.vue')
   },
   {
     path: '/nt_view18',
@@ -200,12 +127,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/nt_view18.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/nt_view18`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/nt_view18.vue')
   },
   {
     path: '/nt_view19',
@@ -213,12 +135,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/nt_view19.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/nt_view19`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/nt_view19.vue')
   },
   {
     path: '/nt_view20',
@@ -226,12 +143,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/nt_view20.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/nt_view20`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/nt_view20.vue')
   },
   {
     path: '/nt_view23',
@@ -239,12 +151,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/nt_view23.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/nt_view23`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/nt_view23.vue')
   },
   {
     path: '/nt_view21',
@@ -252,12 +159,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/nt_view21.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/nt_view21`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/nt_view21.vue')
   },
   {
     path: '/nt_view22',
@@ -265,12 +167,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/nt_view22.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/nt_view22`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/nt_view22.vue')
   },
   {
     path: '/nt_view24',
@@ -278,12 +175,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/nt_view24.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/nt_view24`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/nt_view24.vue')
   },
   {
     path: '/nt_view25',
@@ -291,12 +183,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/nt_view25.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/nt_view25`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/nt_view25.vue')
   },
   {
     path: '/et_view57',
@@ -304,12 +191,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/et_view57.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/et_view57`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/et_view57.vue')
   },
   {
     path: '/et_view55',
@@ -317,12 +199,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/et_view55.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/et_view55`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/et_view55.vue')
   },
   {
     path: '/et_view54',
@@ -330,12 +207,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/et_view54.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/et_view54`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/et_view54.vue')
   },
   {
     path: '/et_view52',
@@ -343,12 +215,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/et_view52.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/et_view52`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/et_view52.vue')
   },
   {
     path: '/et_view51',
@@ -356,12 +223,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/et_view51.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/et_view51`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/et_view51.vue')
   },
   {
     path: '/et_view40',
@@ -369,12 +231,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/et_view40.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/et_view40`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/et_view40.vue')
   },
   {
     path: '/et_view27',
@@ -382,12 +239,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/et_view27.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/et_view27`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/et_view27.vue')
   },
   {
     path: '/et_view37',
@@ -395,12 +247,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/et_view37.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/et_view37`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/et_view37.vue')
   },
   {
     path: '/et_view36',
@@ -408,12 +255,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/et_view36.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/et_view36`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/et_view36.vue')
   },
   {
     path: '/et_view25',
@@ -421,12 +263,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/et_view25.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/et_view25`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/et_view25.vue')
   },
   {
     path: '/et_view30',
@@ -434,12 +271,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/et_view30.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/et_view30`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/et_view30.vue')
   },
   {
     path: '/et_view31',
@@ -447,12 +279,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/et_view31.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/et_view31`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/et_view31.vue')
   },
   {
     path: '/et_view29',
@@ -460,12 +287,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/et_view29.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/et_view29`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/et_view29.vue')
   },
   {
     path: '/et_view22',
@@ -473,12 +295,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/et_view22.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/et_view22`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/et_view22.vue')
   },
   {
     path: '/et_view43',
@@ -486,12 +303,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/et_view43.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/et_view43`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/et_view43.vue')
   },
   {
     path: '/et_view21',
@@ -499,12 +311,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/et_view21.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/et_view21`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/et_view21.vue')
   },
   {
     path: '/et_view23',
@@ -512,12 +319,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/et_view23.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/et_view23`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/et_view23.vue')
   },
   {
     path: '/et_view24',
@@ -525,12 +327,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/et_view24.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/et_view24`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/et_view24.vue')
   },
   {
     path: '/et_view26',
@@ -538,12 +335,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/et_view26.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/et_view26`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/et_view26.vue')
   },
   {
     path: '/et_view28',
@@ -551,12 +343,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/et_view28.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/et_view28`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/et_view28.vue')
   },
   {
     path: '/et_view32',
@@ -564,12 +351,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/et_view32.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/et_view32`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/et_view32.vue')
   },
   {
     path: '/et_view34',
@@ -577,12 +359,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/et_view34.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/et_view34`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/et_view34.vue')
   },
   {
     path: '/et_view35',
@@ -590,12 +367,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/et_view35.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/et_view35`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/et_view35.vue')
   },
   {
     path: '/et_view39',
@@ -603,12 +375,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/et_view39.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/et_view39`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/et_view39.vue')
   },
   {
     path: '/memo',
@@ -616,12 +383,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/memo.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/memo`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/memo.vue')
   },
   {
     path: '/transfer',
@@ -629,12 +391,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/transfer.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/transfer`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/transfer.vue')
   },
   {
     path: '/roulette',
@@ -642,12 +399,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/roulette.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/roulette`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/roulette.vue')
   },
   {
     path: '/sports',
@@ -655,12 +407,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/sports.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/sports`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/sports.vue')
   },
   {
     path: '/korean2',
@@ -668,12 +415,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/korean2.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/korean2`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/korean2.vue')
   },
   {
     path: '/inplay',
@@ -681,12 +423,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/inplay.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/inplay`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/inplay.vue')
   },
   {
     path: '/special',
@@ -694,12 +431,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/special.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/special`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/special.vue')
   },
   {
     path: '/es',
@@ -707,12 +439,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/es.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/es`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/es.vue')
   },
   {
     path: '/vscall',
@@ -720,12 +447,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/vscall.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/vscall`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/vscall.vue')
   },
   {
     path: '/gg_pwb1',
@@ -733,12 +455,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/gg_pwb1.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/gg_pwb1`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/gg_pwb1.vue')
   },
   {
     path: '/hilo',
@@ -746,12 +463,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/hilo.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/hilo`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/hilo.vue')
   },
   {
     path: '/connect',
@@ -759,12 +471,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/connect.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/connect`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/connect.vue')
   },
   {
     path: '/slot',
@@ -772,12 +479,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/slot.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/slot`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/slot.vue')
   },
   {
     path: '/pbg_pwb5',
@@ -785,12 +487,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/pbg_pwb5.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/pbg_pwb5`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/pbg_pwb5.vue')
   },
   {
     path: '/korean',
@@ -798,12 +495,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/korean.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/korean`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/korean.vue')
   },
   {
     path: '/withdrawal_list',
@@ -811,12 +503,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/withdrawal_list.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/withdrawal_list`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/withdrawal_list.vue')
   },
   {
     path: '/deposit_list',
@@ -824,12 +511,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/deposit_list.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/deposit_list`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/deposit_list.vue')
   },
   {
     path: '/qna_deposit',
@@ -837,12 +519,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/qna_deposit.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/qna_deposit`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/qna_deposit.vue')
   },
   {
     path: '/et_view61',
@@ -850,12 +527,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/et_view61.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/et_view61`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/et_view61.vue')
   },
   {
     path: '/cs_write',
@@ -863,12 +535,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/cs_write.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/cs_write`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/cs_write.vue')
   }, 
   {
     path: '/vote',
@@ -876,12 +543,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/vote.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/vote`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/vote.vue')
   },
   {
     path: '/run_roulette',
@@ -889,12 +551,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/run_roulette.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/run_roulette`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/run_roulette.vue')
   },
   {
     path: '/bet_list_inp',
@@ -902,12 +559,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/bet_list_inp.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/bet_list_inp`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/bet_list_inp.vue')
   },
   {
     path: '/bet_list_mini',
@@ -915,12 +567,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/bet_list_mini.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/bet_list_mini`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/bet_list_mini.vue')
   },
   {
     path: '/bet_list_casino',
@@ -928,12 +575,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/bet_list_casino.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/bet_list_casino`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/bet_list_casino.vue')
   },
   {
     path: '/bet_list_es',
@@ -941,22 +583,12 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/bet_list_es.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/bet_list_es`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/bet_list_es.vue')
   },
   {
     path: '/admin/index',
     name: 'aindex',
     component: () => import(/* webpackChunkName: "about" */ '../views/admin/index.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/admin/index`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
   },
   {
     path: '/admin/dedb',
@@ -964,12 +596,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/admin/dedb.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/admin/dedb`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/admin/dedb.vue')
   },
   {
     path: '/admin/userdb',
@@ -977,12 +604,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/admin/userdb.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/admin/userdb`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/admin/userdb.vue')
   },
   {
     path: '/admin/widb',
@@ -990,12 +612,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/admin/widb.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/admin/widb`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/admin/widb.vue')
   },
   {
     path: '/register_update',
@@ -1003,12 +620,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/register_update.vue'),
-    beforeEnter: (to, from, next) => {
-      // 외부 URL로 리디렉션
-      window.location.href = `${BASE_URL}/register_update`;
-      // 리디렉션 후 더 이상 진행되지 않도록 하기 위해 next()를 호출하지 않습니다.
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/register_update.vue')
   },
   {
     path: '/:catchAll(.*)', // 모든 경로를 캐치하여 처리
